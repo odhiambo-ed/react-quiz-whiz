@@ -5,7 +5,7 @@ function SetUpForm() {
     <main>
       <section className="quiz quiz-small">
         <form action="">
-          <h2>Choose the type of Quiz Set</h2>
+          <h2>Choose Set of Quiz</h2>
           <div className="form-control">
             <label htmlFor="amount">number of questions</label>
             <input type="number" id="amount" className="form-input" />
