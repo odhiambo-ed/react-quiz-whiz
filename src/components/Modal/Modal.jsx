@@ -2,7 +2,13 @@
 
 function Modal() {
   return (
-    <div>Modal</div>
+      <div className="modal-container isOpen">
+          <div className="Modal-content">
+              <h2>congratulations</h2>
+              <p>Your have answered 10 questions correctly</p>
+              <button className="close-btn">retake</button>
+          </div>
+    </div>
   )
 }
 
