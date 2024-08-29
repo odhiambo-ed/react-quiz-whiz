@@ -8,7 +8,7 @@ function SetUpForm() {
           <h2>Choose Set of Quiz</h2>
           <div className="form-control">
             <label htmlFor="amount">number of questions</label>
-            <input type="number" id="amount" className="form-input" />
+            <input type="number" id="amount" className="form-input" min={1} max={10} />
           </div>
           <div className="form-control">
             <label htmlFor="category">category</label>
