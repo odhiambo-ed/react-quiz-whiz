@@ -3,7 +3,7 @@
 function Modal() {
   return (
       <div className="modal-container isOpen">
-          <div className="Modal-content">
+          <div className="modal-content">
               <h2>congratulations</h2>
               <p>Your have answered 10 questions correctly</p>
               <button className="close-btn">retake</button>
