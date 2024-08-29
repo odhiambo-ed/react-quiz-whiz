@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.main {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: hsl(209, 61%, 16%);
