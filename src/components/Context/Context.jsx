@@ -6,8 +6,6 @@ const table = {
     politics: 24,
 };
 
-const url = `https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}&category=${table[category]}&type=multiple`;
-
 const AppContext = createContext()
 const AppProvider = ({ children }) => {
     const [error, setError] = useState(false)
@@ -84,6 +82,7 @@ const AppProvider = ({ children }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const { amount, difficulty, category } = quiz;
+        const url = `https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}&category=${table[category]}&type=multiple`;
         fetchQuestions(url);
     };
 
