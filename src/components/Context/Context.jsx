@@ -90,13 +90,27 @@ const AppProvider = ({ children }) => {
 
 
     return (
-        <AppContext.provider>
+        <AppContext.provider value={{
+        waiting,
+        loading,
+        questions,
+        index,
+        correct,
+        error,
+        modal,
+        nextQuestion,
+        checkAnswers,
+        closeModal,
+        quiz,
+        handleChange,
+        handleSubmit,
+      }}>
             {children}
         </AppContext.provider>
     )
 };
 
-export useGlobalContext = () => {
+export const useGlobalContext = () => {
     return useContext(AppContext);
 }
 
