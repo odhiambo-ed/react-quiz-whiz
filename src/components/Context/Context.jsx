@@ -27,7 +27,7 @@ const AppProvider = ({ children }) => {
         setLoading(true)
         setWaiting(false)
         try {
-            const res = await fetch("https://opentdb.com/api.php?amount=10&category=24&difficulty=medium");
+            const res = await fetch(url);
             const result = await res.json()
             const data = result.data.results
 
@@ -44,7 +44,13 @@ const AppProvider = ({ children }) => {
         } catch (e) {
             setError(e.message)
         }
-    }
+    };
+
+    const openModal = () => {
+        setModal(true)
+    };
+
+    
 
     return (
         <AppContext.provider>
