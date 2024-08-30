@@ -81,6 +81,12 @@ const AppProvider = ({ children }) => {
         setQuiz({ ...quiz, [name]: value });
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const { amount, difficulty, category } = quiz;
+        fetchQuestions(url);
+    };
+
 
 
     return (
