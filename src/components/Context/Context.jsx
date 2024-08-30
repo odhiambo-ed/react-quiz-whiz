@@ -54,7 +54,19 @@ const AppProvider = ({ children }) => {
         setModal(false)
         setWaiting(true)
         setCorrect(0)
-    }
+    };
+
+    const nextQuestion = () => {
+        setIndex((prevIndex) => {
+            const index = prevIndex + 1;
+            if (index > questions.length - 1) {
+                openModal()
+                return 0
+            } else {
+                return index
+            }
+        })
+    };
 
 
 
