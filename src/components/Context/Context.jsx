@@ -50,7 +50,13 @@ const AppProvider = ({ children }) => {
         setModal(true)
     };
 
-    
+    const closeModal = () => {
+        setModal(false)
+        setWaiting(true)
+        setCorrect(0)
+    }
+
+
 
     return (
         <AppContext.provider>
