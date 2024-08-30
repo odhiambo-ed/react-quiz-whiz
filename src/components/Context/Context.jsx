@@ -68,6 +68,13 @@ const AppProvider = ({ children }) => {
         })
     };
 
+    const checkAnswers = (value) => {
+        if (value) {
+        setCorrect((oldState) => oldState + 1);
+        }
+        nextQuestion();
+    };
+
 
 
     return (
